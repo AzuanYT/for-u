@@ -134,42 +134,43 @@
     
     
     </div>
-    
-    <div class="max-w-2xl w-full bg-white p-8 rounded-lg shadow-lg fade-in">
-        <h2 class="dancing-font text-3xl text-center text-pink-600 mb-6">Countdown Hari Spesial</h2>
-        
-        <div class="grid grid<div class="max-w-2xl w-full bg-white p-8 rounded-lg shadow-lg mb-12 fade-in">
-    <h2 class="dancing-font text-3xl text-center text-pink-600 mb-6">Kenangan Kita</h2>
-    
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <img src="foto1.jpg" alt="Kenangan 1" class="object-cover h-32 w-full rounded-lg shadow">
-        <img src="foto2.jpg" alt="Kenangan 2" class="object-cover h-32 w-full rounded-lg shadow">
-        <img src="foto3.jpg" alt="Kenangan 3" class="object-cover h-32 w-full rounded-lg shadow">
-        <img src="foto4.jpg" alt="Kenangan 4" class="object-cover h-32 w-full rounded-lg shadow">
-        <img src="foto5.jpg" alt="Kenangan 5" class="object-cover h-32 w-full rounded-lg shadow">
-        <img src="foto6.jpg" alt="Kenangan 6" class="object-cover h-32 w-full rounded-lg shadow">
+    <!-- Kenangan Kita -->
+<div class="max-w-2xl w-full bg-white p-8 rounded-lg shadow-lg mb-12 fade-in">
+  <h2 class="dancing-font text-3xl text-center text-pink-600 mb-6">Kenangan Kita</h2>
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <img src="foto1.jpg" alt="Kenangan 1" class="object-cover h-32 w-full rounded-lg shadow">
+    <img src="foto2.jpg" alt="Kenangan 2" class="object-cover h-32 w-full rounded-lg shadow">
+    <img src="foto3.jpg" alt="Kenangan 3" class="object-cover h-32 w-full rounded-lg shadow">
+    <img src="foto4.jpg" alt="Kenangan 4" class="object-cover h-32 w-full rounded-lg shadow">
+    <img src="foto5.jpg" alt="Kenangan 5" class="object-cover h-32 w-full rounded-lg shadow">
+    <img src="foto6.jpg" alt="Kenangan 6" class="object-cover h-32 w-full rounded-lg shadow">
+  </div>
+</div>
+
+<!-- Countdown Hari Spesial -->
+<div class="max-w-2xl w-full bg-white p-8 rounded-lg shadow-lg fade-in">
+  <h2 class="dancing-font text-3xl text-center text-pink-600 mb-6">Countdown Hari Spesial</h2>
+  <div class="grid grid-cols-4 gap-4 text-center">
+    <div class="bg-pink-100 p-4 rounded-lg">
+      <div class="text-4xl font-bold text-pink-600" id="days">00</div>
+      <div class="text-gray-600">Hari</div>
     </div>
-        </div>-cols-4 gap-4 text-center">
-            <div class="bg-pink-100 p-4 rounded-lg">
-                <div class="text-4xl font-bold text-pink-600" id="days">00</div>
-                <div class="text-gray-600">Hari</div>
-            </div>
-            <div class="bg-pink-100 p-4 rounded-lg">
-                <div class="text-4xl font-bold text-pink-600" id="hours">00</div>
-                <div class="text-gray-600">Jam</div>
-            </div>
-            <div class="bg-pink-100 p-4 rounded-lg">
-                <div class="text-4xl font-bold text-pink-600" id="minutes">00</div>
-                <div class="text-gray-600">Menit</div>
-            </div>
-            <div class="bg-pink-100 p-4 rounded-lg">
-                <div class="text-4xl font-bold text-pink-600" id="seconds">00</div>
-                <div class="text-gray-600">Detik</div>
-            </div>
-        
-        
-        <p class="mt-4 text-center text-gray-600">Menuju hari ulang tahun kita berikutnya</p>
+       <div class="bg-pink-100 p-4 rounded-lg">
+      <div class="text-4xl font-bold text-pink-600" id="hours">00</div>
+      <div class="text-gray-600">Jam</div>
     </div>
+    <div class="bg-pink-100 p-4 rounded-lg">
+      <div class="text-4xl font-bold text-pink-600" id="minutes">00</div>
+      <div class="text-gray-600">Menit</div>
+    </div>
+    <div class="bg-pink-100 p-4 rounded-lg">
+      <div class="text-4xl font-bold text-pink-600" id="seconds">00</div>
+      <div class="text-gray-600">Detik</div>
+    </div>
+  </div>
+  <p class="mt-4 text-center text-gray-600">Menuju hari ulang tahun kita berikutnya</p>
+</div>
+            
     
     <div class="fixed bottom-4 right-4">
         <button id="heartBtn" class="bg-pink-500 text-white p-3 rounded-full shadow-lg hover:bg-pink-600 transition">
@@ -184,7 +185,8 @@
         let isPlaying = false;
         
         musicBtn.addEventListener('click', () => {
-            if (isPlaying) {
+   
+         if (isPlaying) {
                 bgMusic.pause();
                 musicBtn.innerHTML = '<i class="fas fa-music"></i>';
             } else {
