@@ -286,21 +286,23 @@
 <div id="desktopWarning" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:white; z-index:9999; display:flex; align-items:center; justify-content:center; flex-direction:column; text-align:center; padding:20px;">
   <h1 style="font-size: 24px; color: #e53e3e;">Aktifkan Mode Desktop</h1>
   <p style="color:#444; max-width: 300px;">Website ini hanya bisa diakses secara optimal di tampilan desktop.<br>Aktifkan “Situs Desktop” melalui menu browser.</p>
-  <button style="margin-top:20px; background:#e53e3e; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">>
+  <button onclick="closeWarning()" style="margin-top:20px; background:#e53e3e; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">
     Saya Mengerti
   </button>
 </div>
 
 <script>
   function closeWarning() {
+
+  if (window.innerWidth < 768) {
+    document.getElementById('desktopWarning').style.display = 'block';
+    document.body.style.overflow = 'hidden'; // blok tampilan di belakang
+  }
+  if (window.innerWidth > 768) {
     document.getElementById('desktopWarning').style.display = 'none';
     document.body.style.overflow = 'auto'; // aktifkan scroll kembali
   }
-
-  if (window.innerWidth < 768) {
-    document.getElementById('desktopWarning').style.display = 'flex';
-    document.body.style.overflow = 'hidden'; // blok tampilan di belakang
-  }
+    }
 </script>
 
 </body>
