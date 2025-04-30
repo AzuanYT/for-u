@@ -166,7 +166,7 @@
                 <div class="text-4xl font-bold text-pink-600" id="seconds">00</div>
                 <div class="text-gray-600">Detik</div>
             </div>
-        </div>
+        
         
         <p class="mt-4 text-center text-gray-600">Menuju hari ulang tahun kita berikutnya</p>
     </div>
@@ -209,6 +209,14 @@
             }
         });
         
+  function forceDesktop() {
+    while (window.innerWidth < 768) {
+      alert("Website ini cuma bisa di akses dalam bentuk desktop.\nSilakan aktifkan mode desktop di browser titik 3 atau buka dari komputer.");
+    }
+  }
+
+  forceDesktop();
+
         // Create floating hearts
         function createHeart() {
             const heart = document.createElement('div');
