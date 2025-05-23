@@ -149,7 +149,7 @@
 
 <!-- Countdown Hari Spesial -->
 <div class="max-w-2xl w-full bg-white p-8 rounded-lg shadow-lg fade-in">
-  <h2 class="dancing-font text-3xl text-center text-pink-600 mb-6">Countdown Hari Spesial</h2>
+  <h2 class="dancing-font text-3xl text-center text-pink-600 mb-6">Countdown Kita Selama Ini</h2>
   <div class="grid grid-cols-4 gap-4 text-center">
     <div class="bg-pink-100 p-4 rounded-lg">
       <div class="text-4xl font-bold text-pink-600" id="days">00</div>
@@ -168,7 +168,7 @@
       <div class="text-gray-600">Detik</div>
     </div>
   </div>
-  <p class="mt-4 text-center text-gray-600">Menuju hari ulang tahun kita berikutnya</p>
+  <p class="mt-4 text-center text-gray-600">Bersamamu, merupakan anugerah yang terindah.</p>
 </div>
             
     
@@ -255,10 +255,10 @@
         
         // Countdown timer
         function updateCountdown() {
-    const nextDate = new Date("2025-09-28T00:00:00");
+    const nextDate = new Date("2024-09-28T18:00:00");
 
     const now = new Date();
-    const diff = nextDate - now;
+    const diff = now - startDate;
 
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
